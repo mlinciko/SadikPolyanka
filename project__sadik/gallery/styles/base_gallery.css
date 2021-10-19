@@ -1,0 +1,40 @@
+body{
+ background-color: #e4f3fb;
+}
+/*стили страницы*/
+/*галерея*/
+.gallery{
+    margin-top:71px;
+}
+.gallery .container{
+    display:block;
+    padding-bottom: 50px;
+}
+.gallery .come__back{
+    padding: 30px 0px 20px 0px;
+    font-size: 14px;
+    text-decoration: underline;
+}
+.gallery a{
+    color:#000;
+}
+.gallery a:hover{
+    font-weight: bold;
+}
+.gallery .title{
+    font-size: 16px;
+    padding-bottom:10px;
+}
+.image__container{
+    display:flex;
+    flex-wrap:wrap;
+    padding:0 50px;
+}
+.gallery img{
+    margin:5px;
+    width:200px;
+    height:140px;
+}
+.gallery img:hover{
+    opacity:0.6;
+}

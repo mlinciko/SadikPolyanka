@@ -1,0 +1,23 @@
+/*общие стили*/
+body{
+    font-family: 'Comfortaa', cursive;
+    font-size: 14px;
+}
+body.lock{
+    overflow:hidden;
+}
+.wrapper{
+    min-height:100%;
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+}
+.content{
+    flex:1 1 auto;
+}
+.container{
+    display:flex;
+    max-width:1024px;
+    margin:0 auto;
+    padding: 0 20px;
+}

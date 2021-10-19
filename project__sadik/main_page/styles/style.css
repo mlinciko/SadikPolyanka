@@ -1,0 +1,282 @@
+@import url(../../general-style.css);
+@import url(../../header-footer.css);
+@import url('base.css');/*ширина от 960 до 1200*/
+/*Адаптив*/
+/*SMALL MOBILE*/
+@media all and (max-width:480px){
+    .container{
+        max-width:none;
+        padding:0 10px;
+    }
+    .main__page{
+        margin-top:68px;
+    }
+    .info__one .container,.info__two .container{
+        display:block;
+        padding:0;
+    }
+    .info__one img, .info__two img{
+        width: 100%;
+        height: 100%;
+    }
+    .main__page__image{
+        width: 260px;
+        height: 242px;
+        display:block;
+        margin:0 auto;
+        padding-top:10px;
+    }
+    .main__page .title{
+        font-size: 30px;
+    }
+    .main__page li{
+        font-size: 16px;
+    }
+    .info__one .title{
+        font-size: 18px;
+        padding: 15px 0;
+    }
+    .slider__title{
+        margin-top:0;
+    }
+    .slider{
+        margin-bottom:10px;
+    }
+    .map__telephone iframe{
+        width: 90%;
+        height: 190px;
+    }
+    .map__telephone .telephone p{
+        padding-top:10px;
+        font-size:16px;
+    }
+    .reviews .container{
+        padding:10px;
+    }
+    .reviews__slider{
+        padding:0 30px;
+    }
+    .reviews img{
+        width: 50px;
+    }
+    .reviews .text{
+        font-size: 14px;
+    }
+}
+/*MOBILE*/
+@media all and (max-width:760px){
+    .container{
+        max-width:none;
+    }
+    .main__page .container{
+        display:block;
+    }
+    @media all and (min-width:481px) and (max-width:760px)
+    {
+        .main__page__image{
+            width:429px;
+            height: 400px;
+            margin: 0 auto;
+            display:block;
+            padding-top:15px;
+        }
+        .main__page li{
+            font-size: 18px;
+        }
+        .map__telephone iframe{
+            width: 100%;
+            height: 240px;
+        }
+        .map__telephone .telephone p{
+            padding-top:15px;
+        }
+    }
+    .main__page .title__name{
+        font-size: 40px;
+    }
+    .main__page__inf{
+        padding:15px 0;
+    }
+    .main__page .button{
+        display:none;
+    }
+    .menu{
+        display:none;
+    }
+    .info__one img, .info__two img{
+        display:none;
+    }
+    .info__one .text,.info__two .text{
+        padding:0;
+    }
+    .info__one .container,.info__two .container{
+        padding:0 15px;
+    }
+    .mobile__images{
+        display:flex;
+    }
+    .mobile__images img{
+        width: 50%;
+        height: 100%;
+    }
+    .info__one ul{
+        margin:0 auto;
+    }
+    .info__two ul{
+        padding:0;
+    }
+    .info__two .title{
+        padding:10px 0;
+        line-height:1.3em;
+    }
+    .info__one .title{
+        text-align:center;
+    }
+    /*Слайдер*/
+    .slider__item img{
+        width: 200px;
+        height: 124px;
+        border:5px solid #e7eef6;
+    }
+    @media all and (min-width:481px) and (max-width:550px){
+       .slider__item img{
+            width: 220px;
+            height: 132px;
+            border:8px solid #e7eef6;
+        } 
+    }
+    /*карта и телефон*/
+    .map__telephone{
+        display:block;
+    }
+    /*карта*/
+    @media all and (min-width:600px){
+        .map__telephone iframe{
+            width: 80%;
+            height: 280px;
+        }
+    }
+    .map__telephone .container__1,.map__telephone .container__2{
+        width:100%;
+        padding:0 15px;
+    }
+    .map__telephone .map,.map__telephone .telephone{
+        width:100%;
+    }
+    .map__telephone .telephone .number{
+        padding: 0px 0px 15px 0px;
+    }
+    .map__telephone img{
+        margin:15px 0;
+    }
+    /*REVIEW SLIDER*/
+    @media all and (min-width:360px) and (max-width:695px){
+        .reviews .text{
+            font-size: 16px;
+        }
+    }
+    @media all and (max-width:695px){
+        .reviews__slider__item{
+            margin:0 60px;
+        }
+        .reviews a{
+            font-size: 18px;
+        }
+    }
+    @media all and (max-width:565px){
+        .reviews__slider__item{
+            margin:0 10px;
+        }
+    }
+}
+/*TABLET*/
+@media all and (min-width:761px) and (max-width:960px){ 
+    .container{
+        max-width:none;
+    }
+    .main__page__image{
+        width:410px;
+        height: 382px;
+    }
+    .main__page__inf{
+        margin:0 auto;
+    }
+    .main__page .title{
+        font-size: 36px;
+    }
+    .menu__image{
+        width: 100px;
+        height: 100px;
+    }
+    .menu .button__text{
+        font-size: 13px;
+    }
+    /*промо-блоки*/
+    .info__one .text{
+        padding-right: 10px;
+    }
+    .info__one .title{
+        font-size: 18px;
+        padding:10px 0;
+        text-align: center;
+    }
+    .info__one li,.info__two li{
+        line-height: 1.0em;
+    }
+    .info__two .text{
+        padding:10px 0px 0px 20px;
+    }
+    .info__two .title{
+        padding-bottom:10px;
+    }
+    .info__two ul{
+        padding-left:0px;
+    }
+    /*Карта и телефон*/
+    .map__telephone .container__1,.map__telephone .container__2{
+        width: 380px;
+        margin:0 auto;
+    }
+    .map__telephone .container__1{
+        padding-right:10px;
+    }
+    .map__telephone iframe{
+        width: 350px;
+        height: 200px;
+    }
+    .map__telephone .container__2{
+        padding-top: 20px;
+    }
+    .map__telephone img{
+        margin:10px 0;
+    }
+    /*Отзывы*/
+    .reviews__slider__item{
+        height: 170px;
+    }
+    /*Слайдер*/
+    .slider__item img{
+        width: 200px;
+        height: 124px;
+        border:5px solid #e7eef6;
+    }
+    @media all and (min-width:820px){
+        .slider__item img{
+            width: 220px;
+            height: 132px;
+            border:8px solid #e7eef6;
+        }
+        .info__one li,.info__two li{
+            line-height: 1.3em;
+        }
+        .info__two ul{
+            padding-left:20px;
+        }
+        .info__one .title{
+            font-size: 19px;
+        }
+        .info__one .container,.info__two .container{
+            align-items:center;
+        }
+    }
+}

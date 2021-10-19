@@ -1,0 +1,224 @@
+header{
+    position:fixed;
+    z-index:10000;
+    top:0;
+    left:0;
+    width:100%;
+    background-color: #fff;
+    opacity:0.9;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.0), 0 10px 10px rgba(0,0,0,0.20);
+}
+header .container{
+    display:block;
+}
+header .header__burger{
+    display:none;
+}
+header .header__inf{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:nowrap;
+    padding: 15px 0;
+    font-weight: 600;
+}
+header .address{
+    line-height: 1.5em;
+    padding: 0px 15px 0px 0px;
+}
+header .telephone{
+    padding: 0px 0px 0px 15px;
+}
+header .address, header .telephone{
+    max-width:150px;
+    text-align:center;
+    font-size: 14px;
+}
+.telephone__number{
+    font-size: 12px;
+    line-height: 0.8em;;
+}
+.telephone a{
+    color: #000;
+    text-decoration:underline;
+}
+.telephone a:active,.telephone a:hover{
+    color:#ffbc05;
+}
+header ul{
+    display:flex;
+}
+header li{
+    margin: 0px 20px 0px 0px;
+}
+header li:last-child{
+    margin: 0;
+}
+header li a{
+    font-size: 12px;
+    color:#000;
+    text-transform:uppercase;
+}
+header li:last-of-type{
+    display:none;
+}
+header li a:hover{
+    color:#ffbc05;
+    text-decoration: underline;
+}
+/*Стиль текущей страницы меню навигации*/
+.link__main,.link__nutrition,.link__reviews,.link__timetable,.link__gallery,.link__lessons{
+    color:#ffbc05;
+    text-decoration: underline;
+}
+/*FOOTER*/
+footer{
+    background-color: #ffbc05;
+    height:85px;
+    color:#fff;
+    line-height: 1.5em;
+}
+footer .container{
+    height: 100%;
+    justify-content:space-between;
+    align-items:center;
+    padding:11px 20px;
+}
+footer .contact__inf{
+    font-size: 14px;
+}
+footer .number{
+    max-width:120px;
+}
+footer a{
+    color:#fff;
+}
+footer img{
+    width:60px;
+    height: 22px;
+}
+footer .designed__by{
+    font-size: 16px;
+    max-width:250px;
+    text-align:center;
+}
+/*Адаптив*/
+/*SMALL MOBILE*/
+@media all and (max-width:480px){
+    header .address{
+        font-size: 13px;
+    }
+    footer .contact__inf{
+        font-size: 13px;
+    }
+    footer .container{
+        padding:10px;
+    }
+}
+/*MOBILE*/
+@media all and (max-width:760px){
+    header .telephone{
+        display:none;
+    }
+    header li:last-of-type{
+        padding-top:50px;
+        display:block;
+    }
+    header .header__burger{
+        display:block;
+        position:relative;
+        width: 40px;
+        height: 30px;
+    }
+    header .header__burger:before,
+    header .header__burger:after{
+        content:'';
+        background-color: #000;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left:0;
+        transition:0.3s;
+    }
+    header .header__burger:before{
+        top:0;
+    }
+    header .header__burger:after{
+        bottom:0;
+        height: 2px;
+    }
+    header.active{
+       opacity:1;
+    }
+    header .header__burger.active:before{
+        background-color: #fff;
+        transform:rotate(45deg);
+        top:14px;
+    }
+    header .header__burger.active:after{
+        background-color: #fff;
+        transform:rotate(-45deg);
+        bottom:14px;
+    }
+    header .header__burger span{
+        position: absolute;
+        background-color: #000;
+        left:0;
+        width: 100%;
+        height: 3px;
+        top:14px;
+    }
+    header .header__burger.active span{
+        display:none;
+        background-color:#fff;
+    }
+    header nav{
+        overflow:auto;
+        position:fixed;
+        top:-100%;
+        left:0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.8);
+        transition:0.3s;
+    }
+    header nav.active{
+        top:0%;
+    }
+    header ul{
+        padding-top:71px;
+        display:block;
+        text-align:center;
+    }
+    header li {
+        padding-bottom:35px;
+    }
+    header li a{
+        color:#fff;
+        font-size: 22px;
+    }
+    footer img{
+        display:none;
+    }
+    footer .footer__city{
+        font-size: 12px;
+    }
+    footer .designed__by{
+        font-size: 12px;
+    }
+}
+/*TABLET*/
+@media all and (min-width:761px) and (max-width:960px){
+    header .address, header .telephone{
+    max-width:130px;
+    font-size: 10px;
+    }
+    .telephone__number{
+        font-size: 13px;
+        line-height: 1.2em;
+    }
+    header li a{
+        font-size: 11px;
+    }
+
+}

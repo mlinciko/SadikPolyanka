@@ -1,0 +1,32 @@
+@import url(../../general-style.css);
+@import url(../../header-footer.css);
+@import url('base_gallery.css');/*ширина от 960 до 1200*/
+/*Адаптив*/
+/*SMALL MOBILE*/
+@media all and (max-width:480px){
+    .container{
+        padding:0 10px;
+    }
+}
+/*MOBILE*/
+@media all and (max-width:760px){
+
+}
+/*TABLET*/
+@media all and (max-width:960px){
+    .container{
+        max-width:none;
+    }
+    .gallery .container{
+        padding-bottom:30px;
+    }
+    .gallery .come__back{
+        font-size: 16px;
+    }
+    .gallery .title{
+        font-size: 18px;
+    }
+    .image__container{
+        justify-content: space-around;
+    }
+}

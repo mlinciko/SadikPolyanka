@@ -1,0 +1,66 @@
+@import url(../../header-footer.css);
+@import url(../../general-style.css);
+body{
+ background-color: #e4f3fb;
+}
+
+/*стили страницы*/
+.lessons__inf{
+    margin-top:121px;
+}
+.lessons__inf .container{
+    flex-direction:row-reverse;
+    justify-content:space-around;
+}
+.lessons__inf img{
+    width: 300px;
+    height: 134px;
+}
+.lessons__inf .text{
+    max-width:490px;
+    line-height: 1.5em;
+    font-size: 15px;
+}
+.lessons__inf li{
+    list-style-type: disc;
+    list-style-position: inside;
+    padding-left:30px;
+}
+/*стили примеров поделок*/
+.examples{
+    padding-bottom:50px;
+}
+.examples .title{
+    font-size: 16px;
+    padding: 15px 0px 15px 0px;
+}
+.examples .container{
+    display:block;
+}
+.examples .img__container{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+}
+.examples .years{
+    background-color: #fff;
+}
+.examples .subtitle{
+    line-height: 25px;
+    text-align: end;
+    padding-right:10px;
+    font-size: 14px;
+}
+.examples a{
+    color:#333;
+    text-decoration: underline;
+}
+.examples .years:hover img{
+    opacity:0.7;
+}
+.examples .years:hover .subtitle{
+    font-weight: bold;;
+}
+.examples img{
+    width: 230px;
+}

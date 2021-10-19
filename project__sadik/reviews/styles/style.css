@@ -1,0 +1,43 @@
+@import url(../../general-style.css);
+@import url(../../header-footer.css);
+@import url('base.css');/*ширина от 960 до 1200*/
+/*Адаптив*/
+/*SMALL MOBILE*/
+@media all and (max-width:480px){
+    .container{
+        padding:0 10px;
+    }
+    .reviews{
+        padding-bottom:30px;
+    }
+    .slider{
+        width: 300px;
+        height: 310px;
+    }
+    .slider__item img{
+        width: 300px;
+        height: 188px;
+        margin-top:40px;
+    }
+}
+/*MOBILE*/
+@media all and (min-width:481px) and (max-width:760px){
+    .reviews{
+        padding-bottom:30px;
+    }
+    .slider{
+        width: 450px;
+        height: 340px;
+    }
+    .slider__item img{
+        width: 450px;
+        height: 282px;
+        margin-top:25px;
+    }
+}
+/*TABLET*/
+@media all and (max-width:960px){
+    .container{
+        max-width:none;
+    }
+}

@@ -1,0 +1,44 @@
+/*стили таблиц*/
+table{
+    width: 100%;
+    border-collapse:collapse;
+}
+td,th{
+    border:3px solid #7fbcda;
+    border-top:none;
+    border-bottom:none;
+    padding:5px;
+}
+tr:nth-child(even){
+    background-color: #fff;
+}
+tr:nth-child(odd):not(.table__title){
+    background-color: #d8eef9;
+}
+table p{
+    line-height: 1.2em;
+}
+.table__title{
+    background-color: #7fbcda;
+    line-height: 15px;
+    color:#fff;
+    font-size: 16px;
+}
+.last__row{
+    border-bottom:3px solid #7fbcda;
+}
+.table__nutrition{
+    padding-top:71px;
+}
+.table__nutrition .container{
+    display:block;
+    width:100%;
+    padding-bottom:50px;
+}
+.table__nutrition .title{
+    font-size: 18px;
+    text-align: center;
+    padding: 20px 0px 10px 0px;
+}
+
+

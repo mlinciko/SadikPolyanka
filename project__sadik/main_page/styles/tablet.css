@@ -1,0 +1,17 @@
+/*ШИРИНА ОТ 760 ДО 960*/
+/*.container{
+    max-width:760px;
+}*/
+.main__page{
+    background-color: red;
+}
+header .address, header .telephone{
+    max-width:130px;
+    font-size: 12px;
+}
+.telephone__number{
+    font-size: 13px;
+}
+header li a{
+    font-size: 11px;
+}

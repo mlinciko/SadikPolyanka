@@ -1,0 +1,37 @@
+@import url(../../general-style.css);
+@import url(../../header-footer.css);
+@import url('base.css');/*ширина от 960 до 1200*/
+/*Адаптив*/
+/*SMALL MOBILE*/
+@media all and (max-width:480px){
+    .table__row__style__1:not(.main){
+        font-size: 12px;
+        white-space:nowrap;
+    }
+}
+/*MOBILE*/
+@media all and (max-width:760px){
+    .time__information .container{
+        display:block;
+        padding: 0 20px;
+    }
+    .time__information{
+        padding:91px 0 20px 0;
+    }
+    .work__hours{
+        margin:0 auto 0 auto;
+        padding-top:8px;
+    }
+    .table__container{
+        width: 100%;
+    }
+}
+/*TABLET*/
+@media all and (min-width:761px) and (max-width:960px){
+    .container{
+        max-width:none;
+    }
+    .time__information .container{
+        padding:20px;
+    }
+}
