@@ -1,0 +1,102 @@
+body{
+ background-color: #e4f3fb;
+}
+/*стили страницы*/
+.reviews{
+    margin-top:71px;
+}
+.reviews .title{
+    text-transform: uppercase;
+    text-align:center;
+    font-size: 18px;
+    padding: 20px 0px 0px 0px;
+}
+.reviews .subtitle{
+    max-width: 300px;
+    color:#979797;
+    text-align:center;
+    font-size: 16px;
+    margin:0 auto;
+    padding: 10px 0px 10px 0px;
+}
+/*СЛАЙДЕР*/
+.reviews{
+    padding-bottom:50px;
+}
+.reviews .container{
+    display:block;
+}
+.slider{
+    background-color: #fff;
+    width: 600px;
+    height:370px;
+    margin:0 auto;
+    border-radius:30px;
+    position:relative;
+}
+.slick-list{
+    overflow: hidden;
+}
+.slick-track{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+}
+.slider__item img{
+    width: 514px;
+    height: 322px;
+    display:block;
+    margin:0 auto;
+}
+/*СТРЕЛКИ*/
+.slider .slick-arrow{
+    font-size: 0px;
+    position:absolute;
+    bottom:0;
+    z-index:1000;
+    width:40px;
+    height: 50px;
+    opacity:0.4;
+    margin: 0px 20px 10px 20px;
+}
+.slider .slick-arrow:hover{
+    opacity:0.7;
+}
+.slider .slick-arrow.slick-prev{
+    left:0;
+    background: url('../images/pointer_left.png') 0 0 / 100% no-repeat;
+}
+.slider .slick-arrow.slick-next{
+    right:0;
+    background: url('../images/pointer_right.png') 0 0 / 100% no-repeat;
+}
+/*ТОЧКИ*/
+.slider .slick-dots{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+    padding: 0px 0px 10px 0px;
+}
+.slider .slick-dots li{
+    list-style-type:none;
+}
+.slider .slick-dots button{
+    width: 15px;
+    height: 15px;
+    background-color:#e7eef6;
+    font-size: 0px;
+    margin: 0 7px;
+    border-radius:50%;
+}
+.slider .slick-dots li.slick-active button{
+    background-color: #ffbc05;
+}

@@ -1,0 +1,31 @@
+@import url(../../general-style.css);
+@import url(../../header-footer.css);
+@import url('base.css');/*ширина от 960 до 1200*/
+/*Адаптив*/
+/*SMALL MOBILE*/
+@media all and (max-width:480px){
+
+}
+/*MOBILE*/
+@media all and (max-width:760px){
+    .table__nutrition .container{
+        padding-bottom:30px;
+    }
+    .table__1,.table__2{
+        overflow:auto;
+        position:relative;
+    }
+    .table__1 table,.table__2 table{
+        overflow-x:auto;
+        font-size: 13px;
+    }
+    .table__title{
+        font-size: 14px;
+    }
+}
+/*TABLET*/
+@media all and (max-width:960px){
+    .container{
+        max-width:none;
+    }
+}
